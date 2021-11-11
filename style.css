@@ -1,0 +1,172 @@
+*{
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    font-size: 14px;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+body{
+    margin: 0;
+    padding: 0;
+    display:flex ;
+    justify-content: center;
+    width: 100%;
+    min-height: 100vh;
+    background-color: rgb(243, 243, 243);
+}
+
+.container{
+    display: flex;
+    align-items: center;
+    justify-content: start;
+    width: 60%;
+    height: 100vh;
+}
+
+.imagem-celular{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 50%;
+}
+
+.imagem-celular img{
+    height: 50rem;
+}
+
+.instagram-continue{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-direction: column;
+    width: 50%;
+    min-height: 34rem;
+    margin-left: -250px;
+}
+
+.sessao-dois{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: column;
+    background-color: white;
+    width: 100%;
+    padding: 1.3rem 0;
+    border: 1px solid lightgray;
+}
+
+.sessao-dois:nth-child(1){
+    min-height: 19rem;
+    min-width: 450px;
+}
+
+.sessao-dois:nth-child(2){
+    min-width: 450px;
+    
+    
+}
+
+.imagem-logo img{
+    height: 3rem;
+}
+
+.imagem-perfil{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    overflow: hidden;   
+}
+
+.imagem-perfil img{
+    height: 6rem;
+}
+
+.login{
+    background-color: #0095f6;
+    color: #ffffff;
+    padding: 8px;
+    border-radius: 4px;
+}
+
+.logou{
+    color: #0095f6;
+    margin-top: 1rem;
+}
+
+.inscreva {
+    white-space: nowrap;
+    
+}
+
+.sessao-dois p {
+    color:grey;
+}
+
+.sessao-dois .inscreva a{
+    color:#0095f6
+}
+
+.get-the-app {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    padding: 1.3rem 0;
+
+}
+
+.download {
+    display: flex;
+    width: 100%;
+    justify-content: space-evenly;
+    align-items: center;
+    padding: 1rem;
+}
+
+.app-download {
+    height: 3rem;
+    width: 10rem;
+    background-size: cover;
+}
+
+.app-download:nth-child(1) {
+    background-image: url('./img/apple-button.png');
+}
+
+.app-download:nth-child(2) {
+    background-image: url('./img/googleplay-button.png');
+}
+
+
+@media (max-width: 1024px) {
+    .container {
+        width: 90%;
+    }
+}
+
+@media (max-width: 650px) {
+    body {
+        background-color: #ffffff;
+    }
+
+    .container{
+        width: 70%;
+    }
+
+    .sessao-um{
+        display: none;
+    }
+
+    .instagram-continue {
+        width: 100%;
+    }
+    
+    .sessao-dois {
+        border: 1px solid transparent;
+    }
+}
+
